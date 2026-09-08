@@ -6,6 +6,83 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!--<h1> Titulo maior"Matricula- Escola Online"
+    <fieldset> Delimita um grupo relacionado dentro do formulario, comumente utilizado para organizar "Dados pessoais" etc...
+    <legend> Define um grupo criado com <fieldset>
+    </form> Cria um formulario na pagina
+    <input> Cria campos para que o usuario possa realizar o preenchimento
+    required Faz com que um campo seja obrigatoriamente preenchido
+    type Define um campo ou tipo de botao
+    type=date Define uma data no formulario
+    type=email Cria um campo para o enderco de email e ativa a navegacao automatica do navegado
+    type=password Cria campo para digitar a senha e mascara a mesma
+    type=number Cria um campo destinado a valores numericos e restringe a entrada a numeros
+    type=tel Indica o campo para ser preenchido com telefone
+    placeholder Exibe uma mensagem de exemplo para o campo que deve ser preenchido
+    <select> Cria uma lista suspensa para o usuario escolher alguma opcao
+    <option> Representa as opcoes criadas dentro da lista <select>
+    <button> Cria botoes que executam acoes distintas no formulario
+        type=submit Envia os dados do formulario
+        type=reset Apaga tudo que foi digitado
+    <br> Cria uma quebra de linha -->
+    <h1>Matrícula - Escola Online</h1>
+    <br>
+    <form action="/matricula" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <p></p>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data" required>
+            <br>
+            <p></p>
+            <label for="email"> E-mail do aluno:</label>
+            <input type ="email" id="email" name ="email" placeholder="alun@exemplo.com" required>
+            <br>
+            <p></p>
+            <label for="senha">Senha de acesso:</label>
+            <input type="password" id="senha" name="senha" placeholder="*********" required>
+            <br>
+            <p></p>
+            <label for="telefone">Telefone de emergência:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            <br>
+            <p></p>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+            <br>
+            <p></p>
+            <fieldset>
+                <legend>Preferência de estudo</legend>
+                <br>
+                <input type="checkbox" id="front-end" name="interesses" value="front-end">
+                <label for="front-end">Front-end</label>
+                <br>
+                <input type="checkbox" id="back-end" name="interesses" value="back-end">
+                <label for="back-end">Back-end</label>
+                <br>
+                <input type="checkbox" id="design" name="interesses" value="design">
+                <label for="design">Design</label>
+                <br>
+                <input type="checkbox" id="dados" name="interesses" value="dados">
+                <label for="dados">Dados</label>
+            </fieldset>
+            <br>
+            <p></p>
+            <label for="conhece" >Como conheceu a escola?</label>
+            <select id="conhece" name="conhece" required>
+                <option value="">Selecione uma opção</option>
+                <option value="indicacao">Indicação</option>
+                <option value="internet">Google</option>
+                <option value="rede_social">Rede social</option>
+            </select>
+            <fieldset> 
+                <br>
+                <button type="submit"> Matricular</button>
+                <button type="reset"> Limpar</button>
+            </fieldset>
+    </form>
 </body>
 </html>
